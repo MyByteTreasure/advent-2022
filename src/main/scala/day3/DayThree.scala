@@ -7,16 +7,6 @@ import java.util.regex.Pattern
 import scala.annotation.switch
 import scala.io.Source
 
-val rock = "Rock"
-val paper = "Paper"
-val scissors = "Scissors"
-
-val map = Map(
-  rock -> (scissors, paper),
-  paper -> (rock, scissors),
-  scissors -> (paper, rock),
-)
-
 @main def calculateScore(): Unit = {
   val input = Source.fromFile("C:\\Users\\smidtma\\IdeaProjects\\personal\\advent\\2022\\advent-2022\\src\\main\\scala\\day3\\input.txt")
   val text = input.mkString
